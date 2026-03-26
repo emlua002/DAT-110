@@ -1,0 +1,73 @@
+body {
+	font-family: "Inter", sans-serif;
+}
+
+/* Custom background color used in the intro section */
+.bg-cyan-100 {
+    background-color: #cffafe
+}
+
+/* Custom button style to match the cyan theme */
+.btn-cyan-100 {
+	background-color: #cffafe;
+	border-color: #b3f1f9;
+	color: #000000;
+}
+
+/* hover, focus, and active states. Focus is when the element has focus, active is when it's being clicked */
+.btn-cyan-100:hover,
+.btn-cyan-100:focus,
+.btn-cyan-100:active {
+	background-color: #b8f4fc;
+	border-color: #9beef8;
+	color: #000000;
+}
+
+/* margin-block adds vertical margin, top and bottom */
+.profile-photo {
+	margin-block: 1.5rem;
+}
+
+.profile-text {
+    font-size: 1.5rem;
+	/* 60ch keeps long text lines easier to read */
+	max-width: 60ch;
+	margin-inline: auto;
+	line-height: 1.6;
+}
+
+.card-title-air {
+	margin-bottom: 1rem;
+}
+
+.carousel-fix {
+	/* Limits carousel width on large screens and centers it */
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.carousel-fix .carousel-indicators {
+	bottom: 10px;
+}
+
+.carousel-fix .carousel-indicators [data-bs-target] {
+	/* Wider indicator bars are easier to see and click/tap */
+	width: 44px;
+	height: 4px;
+	margin: 0 5px;
+	border: 0;
+	border-radius: 2px;
+	background-color: rgba(255, 255, 255, 0.55);
+	opacity: 1;
+}
+
+.carousel-fix .carousel-indicators .active {
+	background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+	.profile-text {
+		/* Slightly smaller text on tablets/phones for better fit */
+		font-size: 1.1rem;
+	}
+}
